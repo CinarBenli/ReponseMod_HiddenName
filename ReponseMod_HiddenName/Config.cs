@@ -10,7 +10,9 @@ namespace ReponseMod_HiddenName
 
         public void LoadDefaults()
         {
-            throw new System.NotImplementedException();
+            PolicePerm = "Police";
+            DoctorPerm = "Doctor";
+            AdminPerm = "Admins"; 
         }
     }
 }
