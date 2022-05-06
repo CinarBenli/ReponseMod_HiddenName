@@ -20,7 +20,7 @@ namespace ReponseMod_HiddenName
 
         private void j(UnturnedPlayer player)
         {
-            if (player.HasPermission(Configuration.Instance.PolicePerm) || player.HasPermission(Configuration.Instance.DoctorPerm) || player.HasPermission(Configuration.Instance.AdminPerm))
+            if (!player.HasPermission(Configuration.Instance.PolicePerm) || !player.HasPermission(Configuration.Instance.DoctorPerm) || !player.HasPermission(Configuration.Instance.AdminPerm))
             {
                 player.Player.disablePluginWidgetFlag(SDG.Unturned.EPluginWidgetFlags.ShowInteractWithEnemy);
                 return;
